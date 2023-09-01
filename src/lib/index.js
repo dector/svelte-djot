@@ -1,1 +1,3 @@
-// Reexport your entry components here
+import Djot from './Djot.svelte';
+
+export { Djot };

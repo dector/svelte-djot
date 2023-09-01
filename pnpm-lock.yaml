@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 devDependencies:
+  '@djot/djot':
+    specifier: ^0.2.3
+    version: 0.2.3
   '@sveltejs/adapter-auto':
     specifier: ^2.0.0
     version: 2.1.0(@sveltejs/kit@1.24.0)
@@ -44,6 +47,9 @@ devDependencies:
   svelte-check:
     specifier: ^3.4.3
     version: 3.5.1(postcss@8.4.29)(svelte@4.2.0)
+  svelte-djot:
+    specifier: ^0.1.0
+    version: 0.1.0(svelte@4.2.0)
   tslib:
     specifier: ^2.4.1
     version: 2.6.2
@@ -67,6 +73,12 @@ packages:
     dependencies:
       '@jridgewell/gen-mapping': 0.3.3
       '@jridgewell/trace-mapping': 0.3.19
+    dev: true
+
+  /@djot/djot@0.2.3:
+    resolution: {integrity: sha512-5Oa9adc0rP1pK42glgn8Ascxak7oaDAplgTA8e4zqqPJGyPsbpkYWKN+34QhsFlpwHI/B3W2UTr25R9VRcMPCg==}
+    engines: {node: '>=17.0.0'}
+    hasBin: true
     dev: true
 
   /@esbuild/android-arm64@0.18.20:
@@ -1828,6 +1840,14 @@ packages:
       - sass
       - stylus
       - sugarss
+    dev: true
+
+  /svelte-djot@0.1.0(svelte@4.2.0):
+    resolution: {integrity: sha512-SNJnYOLhutgPaXq5G9AhhQO9hPF2qI9IngQydyF/oItYSNzjA9gUpU/n3pBpRU019tyb9x1qlXYf5mzzpyNJMw==}
+    peerDependencies:
+      svelte: ^4.0.0
+    dependencies:
+      svelte: 4.2.0
     dev: true
 
   /svelte-eslint-parser@0.33.0(svelte@4.2.0):
