@@ -1,9 +1,7 @@
 <script lang="ts">
 	import { Djot } from '$lib/index.js';
-  import type { renderHTML } from '@djot/djot';
+  import type { HTMLRenderOptions } from '$lib/Djot.svelte';
 		
-	type HTMLRenderOptions = Parameters<typeof renderHTML>[1];
-
 	const text = '{-Hello-} {+Hola+} _djot_ from *SvelteKit*!';
 
   const options: HTMLRenderOptions = {
